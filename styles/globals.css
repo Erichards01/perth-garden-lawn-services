@@ -38,6 +38,43 @@ a {
 /* My CSS from now - not sure what above I'll keep yet? */
 
 .active {
-  font-variant: small-caps;
+  border: solid 2px rgb(0, 132, 15);
+  background-color: rgb(0, 67, 8);
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 67, 8);
+}
+li {
+  z-index: 10;
+  display: flex;
+}
+
+li a {
+  margin-block: 8px;
+  margin-right: 8px;
+
+  background-color: rgb(0, 132, 15);
+  color: rgb(255, 255, 255);
+  font-size: 150%;
   font-weight: 900;
+
+  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000,
+    1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+li a:hover {
+  background-color: #000000;
 }

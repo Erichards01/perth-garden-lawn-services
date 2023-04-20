@@ -1,0 +1,27 @@
+.backgroundImage {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.heroContainer {
+  height: 75vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+#heroHeader {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  top: 20;
+}
+.content {
+  z-index: 10;
+  color: #ffffff;
+  font-size: 350%;
+  font-weight: 900;
+  text-shadow: -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000, 2px 0 0 #000,
+    2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000;
+}

@@ -78,3 +78,9 @@ li a {
 li a:hover {
   background-color: #000000;
 }
+
+.backgroundImage {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}

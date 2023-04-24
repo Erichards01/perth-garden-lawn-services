@@ -1,9 +1,9 @@
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import heroImg from "../public/Lawn3.jpg";
-import logoMower from "../public/logoMower.jpg";
-import logoLeaf from "../public/logoLeaf.jpg";
-import logoBin from "../public/logoBin.jpg";
+import logoMower from "../public/LogoMower.jpg";
+import logoLeaf from "../public/LogoLeaf.jpg";
+import logoBin from "../public/LogoBin.jpg";
 
 export default function Home() {
   return (

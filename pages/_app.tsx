@@ -7,21 +7,25 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
-const inter = Inter({ subsets: ["latin"] });
+import Layout from "@/components/Layout";
+
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
-  const router = useRouter();
-  return (
-    <div className="container">
-      <div className={inter.className}>
-        <Head>
-          <title>Perth Garden and Lawn Services</title>
-          <meta name="description" content="Perth Garden and Lawn Services" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+  // const router = useRouter();
 
-        <nav>
+  return (
+    // <div className="container">
+    //   <div className={inter.className}>
+    <Layout>
+      {" "}
+      <Head>
+        <title>Perth Garden and Lawn Services</title>
+        <meta name="description" content="Perth Garden and Lawn Services" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      {/* <nav>
           <Image
             src={headerImage}
             alt=" dark vertical timber panels"
@@ -59,13 +63,11 @@ export default function App({ Component, pageProps }: AppProps) {
               </Link>
             </li>
           </ul>
-        </nav>
-        <footer>
+        </nav> */}
+      <Component {...pageProps} />
+      {/* <footer>
           <Image src={footerImage} alt="grass" className="footerImage" />
-        </footer>
-
-        <Component {...pageProps} />
-      </div>
-    </div>
+        </footer> */}
+    </Layout>
   );
 }

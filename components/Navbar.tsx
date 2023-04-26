@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import headerImage from "../public/wood1.jpeg";
 import facebook from "../public/facebook.png";
-import logo from "../public/Logo.jpg";
+import logo from "../public/LogoComplete.jpg";
 import Link from "next/link";
 import { useRouter } from "next/router";
 

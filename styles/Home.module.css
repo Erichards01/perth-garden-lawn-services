@@ -3,16 +3,19 @@
   width: 100%;
   height: auto;
   z-index: -1;
+  /* min-height: 1000px; */
 }
 .heroContainer {
   margin-block: 40px;
-  height: 75vh;
+  height: 90vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   overflow: hidden;
+  min-width: 1050px;
+  min-height: 900px;
 }
 #heroHeader {
   display: flex;
@@ -27,4 +30,14 @@
   font-weight: 900;
   text-shadow: -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000, 2px 0 0 #000,
     2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000;
+}
+
+@media (max-width: 1300px) {
+  .content {
+    font-size: 250%;
+  }
+  img.content {
+    height: 80px !important;
+    width: 80px !important;
+  }
 }

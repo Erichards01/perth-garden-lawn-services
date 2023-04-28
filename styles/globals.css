@@ -155,3 +155,6 @@ nav {
   align-content: center;
   flex-wrap: wrap;
 }
+.content-wrap {
+  padding-bottom: 10vh;
+}

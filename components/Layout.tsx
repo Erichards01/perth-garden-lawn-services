@@ -10,7 +10,7 @@ function Layout({ children }: { children: React.ReactNode }) {
     <div className="container">
       <div className={inter.className}>
         <Navbar />
-        <main>{children}</main>
+        <div className="content-wrap">{children}</div>
         <Footer />
       </div>
     </div>

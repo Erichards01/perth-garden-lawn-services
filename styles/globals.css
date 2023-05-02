@@ -49,6 +49,8 @@ a {
 }
 
 ul {
+  position: inherit;
+
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -112,10 +114,12 @@ footer {
   bottom: 0;
   margin-top: auto;
   min-width: 1050px;
+
+  justify-content: center;
 }
 .footerImage {
   width: 100%;
-
+  height: fit-content;
   object-fit: cover;
   z-index: 1;
 }
@@ -137,6 +141,7 @@ nav {
   width: auto;
   z-index: 3;
 }
+
 .Facebook {
   z-index: 10;
   display: flex;
@@ -158,4 +163,19 @@ nav {
 }
 .content-wrap {
   padding-bottom: 10vh;
+}
+
+.footerActive {
+  color: #000000 !important;
+  text-shadow: -1px -1px 0 #ffffff, 0 -1px 0 #ffffff, 1px -1px 0 #ffffff,
+    1px 0 0 #ffffff, 1px 1px 0 #ffffff, 0 1px 0 #ffffff, -1px 1px 0 #ffffff,
+    -1px 0 0 #ffffff !important;
+}
+
+.foot a {
+  color: #ffffff;
+  text-shadow: -2px -2px 0 #000000, 0 -2px 0 #000000, 2px -2px 0 #000000,
+    2px 0 0 #000000, 2px 2px 0 #000000, 0 2px 0 #000000, -2px 2px 0 #000000,
+    -2px 0 0 #000000;
+  background-color: transparent;
 }
